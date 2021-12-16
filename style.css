@@ -7,10 +7,16 @@ body {
 {
     text-align: center;
     font-size: 45px;
-    color:white;
+    background-image: linear-gradient(90deg,black,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family:'RidleyGroteskW00-SemiBold',sans ;
 }
 
+.word
+{
+  color: #95E70D;
+}
 
   .container {
     align-items: center;
@@ -201,16 +207,33 @@ body {
     }
   }
     @media screen and (max-width: 750px) {
+      .card .fas
+      {
+        background-color: #070D0E;
+        color:#95E70D ;
+        font-size: 25px;
+      }
+      .card
+      {
+        height: 300px;
+      }
+      .card:hover {
+        transform: translateY(0 rem);
+      }
+      .card__top{
+        background-color: #95E70D;
+        color:#070D0E
+      }
       .container {
           display: none;
       }
       .slideshow-container
       {
-        padding-top: 20px;;
+        padding-top: 35px;;
       }
       .Track
       {
-        font-size: 35px;
+        font-size: 25px;
       }
     
 }
