@@ -167,7 +167,8 @@ body {
       }
       .Track
       {
-        font-size: 25px;
+        font-size: 35px;
+        padding-bottom: 10px
       }
     
 }
