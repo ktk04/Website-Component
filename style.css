@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-content: center;
     border-radius: 3%;
-    height: 650px;
+    height: 590px;
     width: 1300px;
     background: #2d2e30;
     display: grid;
@@ -117,56 +117,12 @@ body {
   }
 
 
-  /*Slideshow*/
-
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-
-  .mySlides>.card{
-
-    margin: auto;
-    justify-content: center;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-
 
 
 /*Responsive*/
 
   @media screen and (min-width: 1250px){
-    .slideshow-container{
+    .item{
       display: none;
     }
   }
@@ -180,8 +136,7 @@ body {
       height: 300px;
       transform: translateY(0 rem);
     }
-    .slideshow-container
-    {
+    .item{
       display: none;
     }
   }
@@ -197,7 +152,7 @@ body {
         height: 300px;
       }
       .card:hover {
-        transform: translateY(0 rem);
+        transform:none;
       }
       .card__top{
         background-color: #95E70D;
@@ -212,7 +167,7 @@ body {
       }
       .Track
       {
-        font-size: 35px;
+        font-size: 25px;
       }
     
 }
