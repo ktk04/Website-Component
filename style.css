@@ -161,13 +161,11 @@ body {
       .container {
           display: none;
       }
-      .slideshow-container
-      {
-        padding-top: 35px;;
-      }
+      
       .Track
       {
-        font-size: 25px;
+        font-size: 35px;
+        padding-bottom:15px
       }
     
 }
