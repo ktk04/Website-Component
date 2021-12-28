@@ -1,0 +1,64 @@
+
+@media only screen and (max-width:1140px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease;
+    }
+    .heading
+    {
+        font-size: 8vh;
+    }
+    .heading span{
+        font-size: 8vh;
+    }
+    .navbar{
+        height: 363px;
+    }
+    .logo {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+    }
+    .rightNav{
+        width: 31%;
+    }
+    .firstSection
+    {
+        height: auto;
+        margin-bottom: 4vh;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstHalf {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .firstHalf p{
+        text-align: center;
+    }
+    a.btn2{
+        font-size: 11px;
+    }
+    .secondHalf img{
+        width: 86vw;
+        justify-content: center;
+        margin-right: 26vw;
+        margin-top: 365px;
+        border-radius: 50%;
+    }
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 22px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
