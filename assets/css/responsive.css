@@ -3,6 +3,7 @@
     .navbar,.nav-list{
         flex-direction: column;
         transition: all 0.7s ease;
+        position: sticky;
     }
     .heading
     {
