@@ -592,10 +592,15 @@ font-size: 2vw;
 color: #95E70D;
 }
 
+
+.SponsorBanners{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+ }
+ 
 .SponsorBanners img{
 margin-left: 7vw;
 width: 8vw;
-
 }
 
 .MentorSec{
@@ -817,9 +822,17 @@ footer>div>div>div>ul>li{
   
   .MentorBanners{
     margin-top: 7%;
-    margin-left: 19vw;
+    margin-left: 18vw;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  
+.SponsorBanners{
+  margin-left: 5vw;
+  margin-top: 3vh;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3vh;
+ }
 
   .MentorBanners img{
     height: 23vw;
@@ -854,5 +867,8 @@ footer>div>div>div>ul>li{
   .tags h4{
     font-size: 1.6vh !important;
     font-weight: lighter;
+    
+    
+    
   }
   }
