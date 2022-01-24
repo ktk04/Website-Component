@@ -456,9 +456,9 @@
       if ($(window).width() >=1250) {
         console.log("Hi");
     $('.dropdown1,.dropdown2,.dropdown3').hover(function() {
-    $('.SponsorSec').css("margin-top", "50vh"); // change css
+    $('.SponsorSec').animate({ marginTop: '50vh'}, 500); 
     }, function() {
-    $('.SponsorSec').css("margin-top","0vh");
+    $('.SponsorSec').animate({ marginTop: '0vh'}, 500); 
        });
       }
     });
