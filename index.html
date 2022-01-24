@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hackfolio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <script src="https://kit.fontawesome.com/df13685a5e.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/2bd00a2c82.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -17,11 +19,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() < 40) {
+        $(".navbar").css("z-index", -1);
+      } else {
+        $(".navbar").css("z-index", 2);
+      }
+    });
+  </script>
 </head>
 
 <body>
-  <nav class="navbar h-nav-resp">
+  <nav class="navbar h-nav-resp" data-aos="slide-down" data-aos-delay="100" data-aos-duration="1000">
     <div class="logo">
       <h1 id="cornerborder"><sup>Γ</sup>Hackfolio</h1>
     </div>
@@ -43,11 +53,16 @@
 
   <div class="container firstSection">
     <div class="box-main">
-      <div class="firstHalf">
+      <div class="firstHalf" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
         <h1 class="heading">Your Home for <br><span>Hackathon</span></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas commodi soluta ullam, molestias blanditiis
-          quia, quam vitae enim perspiciatis cupiditate consequuntur labore dolores natus voluptatibus placeat expedita!
-          Natus, tempore similique!</p>
+        <p>The only source of knowledge is experience. Ninjathon is a hackathon driven by individuals who
+          are
+          enthusiastic about creative problem solving, where people meet up to solve problems in groups which helps them
+          engage in collaborative projects to create technology and set their coding abilities to work. A hands-on
+          opportunity for people with technical backgrounds to engage, collaborate and innovate to solve a problem or
+          develop a new idea. The ideal spot to display your coding abilities and fabricate something together.
+
+
         <div class="buttons">
           <button class="btn1">Apply with Devfolio</button>
           <a href="#" class="btn2">
@@ -56,7 +71,7 @@
               <i class="fab fa-discord fa-stack-1x fa-inverse"></i></span> Join Discord</a>
         </div>
       </div>
-      <div class="secondHalf">
+      <div class="secondHalf" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
         <img src="./assets/img/Hackathon/Hackathon/homeimage.png" alt="">
       </div>
     </div>
@@ -67,14 +82,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa fa-arrow-up"></i></button>
   <div class="Track_Header" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <span class="Track1">
       Discover the </span> <span class="Track2"> Track</span><br> <span class="Track3">Based on Your Idea </span>
   </div>
-  <div class='track_container' data-aos="fade-left" data-aos-delay="100"data-aos-duration="1000">
+  <div class='track_container' data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <div class='card'>
       <div class='card__top'>
-        <i class='fas fa-user-shield'></i>
+        <i class='fas fa-user-secret'></i>
         <h1>Cybersecurity </h1>
       </div>
       <div class='card__bottom'>
@@ -84,8 +100,8 @@
     </div>
     <div class='card'>
       <div class='card__top'>
-        <i class='fas fa-brain'></i>
-        <h1>AI/ML </h1>
+        <i class='fas fa-user-graduate'></i>
+        <h1>Education </h1>
       </div>
       <div class='card__bottom'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -94,48 +110,8 @@
     </div>
     <div class='card'>
       <div class='card__top'>
-        <i class='fas fa-folder-open'></i>
-        <h1>Open Source </h1>
-      </div>
-      <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='card__top'>
-        <i class='fas fa-globe'></i>
-        <h1>Web Dev </h1>
-      </div>
-      <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='card__top'>
-        <i class='fas fa-user-shield'></i>
-        <h1>Cybersecurity </h1>
-      </div>
-      <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='card__top'>
-        <i class='fas fa-brain'></i>
-        <h1>AI/ML </h1>
-      </div>
-      <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='card__top'>
-        <i class='fas fa-folder-open'></i>
-        <h1>Open Source </h1>
+        <i class='fas fa-shield-alt'></i>
+        <h1>Women's Safety</h1>
       </div>
       <div class='card__bottom'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -145,7 +121,47 @@
     <div class='card'>
       <div class='card__top'>
         <i class='fas fa-globe'></i>
-        <h1>Web Dev </h1>
+        <h1>E-Administration </h1>
+      </div>
+      <div class='card__bottom'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna </p>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card__top'>
+        <i class='fas fa-tools'></i>
+        <h1>Developer Tools </h1>
+      </div>
+      <div class='card__bottom'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna </p>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card__top'>
+        <i class='fas fa-coins'></i>
+        <h1>Blockchain & Crypto </h1>
+      </div>
+      <div class='card__bottom'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna </p>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card__top'>
+        <i class='fas fa-running'></i>
+        <h1>Personal Growth & <br> Well-being </h1>
+      </div>
+      <div class='card__bottom'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna </p>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card__top'>
+        <i class='fas fa-code-branch'></i>
+        <h1>Open Innovation </h1>
       </div>
       <div class='card__bottom'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -155,11 +171,11 @@
 
   </div>
 
-  <div class="owl-carousel owl-theme"  data-aos="fade-left" data-aos-duration="1000">
+  <div class="owl-carousel owl-theme" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <div class="item">
       <div class='card'>
         <div class='card__top'>
-          <i class='fas fa-user-shield'></i>
+          <i class='fas fa-user-secret'></i>
           <h1>Cybersecurity </h1>
         </div>
         <div class='card__bottom'>
@@ -171,8 +187,8 @@
     <div class="item">
       <div class='card'>
         <div class='card__top'>
-          <i class='fas fa-brain'></i>
-          <h1>AI/ML </h1>
+          <i class='fas fa-user-graduate'></i>
+          <h1>Education</h1>
         </div>
         <div class='card__bottom'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -183,56 +199,8 @@
     <div class="item">
       <div class='card'>
         <div class='card__top'>
-          <i class='fas fa-folder-open'></i>
-          <h1>Open Source </h1>
-        </div>
-        <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class='card'>
-        <div class='card__top'>
-          <i class='fas fa-globe'></i>
-          <h1>Web Dev </h1>
-        </div>
-        <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class='card'>
-        <div class='card__top'>
-          <i class='fas fa-user-shield'></i>
-          <h1>Cybersecurity </h1>
-        </div>
-        <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class='card'>
-        <div class='card__top'>
-          <i class='fas fa-brain'></i>
-          <h1>AI/ML </h1>
-        </div>
-        <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class='card'>
-        <div class='card__top'>
-          <i class='fas fa-folder-open'></i>
-          <h1>Open Source </h1>
+          <i class='fas fa-shield-alt'></i>
+          <h1>Women's Safety</h1>
         </div>
         <div class='card__bottom'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -244,7 +212,55 @@
       <div class='card'>
         <div class='card__top'>
           <i class='fas fa-globe'></i>
-          <h1>Web Dev </h1>
+          <h1>E-Administration </h1>
+        </div>
+        <div class='card__bottom'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class='card'>
+        <div class='card__top'>
+          <i class='fas fa-tools'></i>
+          <h1>Developer Tools </h1>
+        </div>
+        <div class='card__bottom'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class='card'>
+        <div class='card__top'>
+          <i class='fas fa-coins'></i>
+          <h1>Blockchain & Crypto</h1>
+        </div>
+        <div class='card__bottom'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class='card'>
+        <div class='card__top'>
+          <i class='fas fa-running'></i>
+          <h1>Personal Growth & Well Being </h1>
+        </div>
+        <div class='card__bottom'>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class='card'>
+        <div class='card__top'>
+          <i class='fas fa-code-branch'></i>
+          <h1>Open Innovation </h1>
         </div>
         <div class='card__bottom'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -253,87 +269,93 @@
       </div>
     </div>
   </div>
-  <section class="timeline"  data-aos="fade-right" data-aos-duration="1000">
-    <div id="timeline">Timeline</div>
-    <div id="coming-soon">Coming Soon</div>
-    <div>
+  <section class="timeline">
+    <div id="timeline" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Timeline</div>
+    <div id="coming-soon" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Coming Soon</div>
+    <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
       <h>Prizes</h>
       <h>Get your Reward</h>
       <div class="prizes">
-        <div class="dropdown">
+        <div class="dropdown1">
           <div class="prztxt">
             <span>1</span>
             <p>First</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
+          <div id="dropdowncontent1"><div>Coming Soon</div></div>
         </div>
-        <div class="dropdown">
+
+        <div class="dropdown2">
           <div class="prztxt">
             <span>2</span>
             <p>Second</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
+          <div id="dropdowncontent2"><div>Coming Soon</div></div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown3 hvr">
           <div class="prztxt">
             <span>3</span>
             <p>Third</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
+          <div id="dropdowncontent3"><div>Coming Soon</div></div>
         </div>
       </div>
 
     </div>
   </section>
-  <div class="SponsorSec"  data-aos="fade-left" data-aos-duration="1000">
+  <div class="SponsorSec" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <div class="Sponsor_Header">
       <span id="Sponsorheader1">Our Proud&nbsp;</span> <span id="Sponsorheader2">Sponsors</span>
     </div>
-    <div class="SponsorSubHeads">
+    <!-- 
+        <div class="SponsorSubHeads">  
       <h4>Platinum</h4>
       <div class="SponsorBanners">
         <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
       </div>
       <h4>Gold</h4>
       <div class="SponsorBanners">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
       </div>
       <h4>Silver</h4>
       <div class="SponsorBanners">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
       </div>
       <h4>Bronze</h4>
       <div class="SponsorBanners">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div>
       </div>
-    </div>
+    </div> -->
+    <div id="coming-soon">Coming Soon</div>
   </div>
 
-  <div class="MentorSec"  data-aos="fade-right" data-aos-duration="1000">
+  <div class="MentorSec" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
     <div class="MentorHeader">
       <span id="Mentorheader1">Mentors&nbsp;</span><span id="Mentorheader2">who we trust</span>
     </div>
-    <div class="MentorBanners">
+    <!-- <div class="MentorBanners">
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
@@ -342,53 +364,59 @@
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
       <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
-    </div>
+    </div> -->
+    <div id="coming-soon">Coming Soon</div>
   </div>
 
 
-  <div class="FAQs"  data-aos="fade-in" data-aos-duration="1000">
-    <img src="./assets/img/Hackathon/Hackathon/Group 55@2x.png" alt="FAQ" id="FAQimg">
-    <div class="FAQsec">
+  <div class="FAQs">
+    <img src="./assets/img/Hackathon/Hackathon/Group 55@2x.png" alt="FAQ" id="FAQimg" data-aos="slide-right"
+      data-aos-delay="100" data-aos-duration="1000">
+    <div class="FAQsec" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000" style="overflow-x: hidden;">
       <h2 id="FAQheader">FAQs</h2>
       <div class="tags">
-        <h4 id="tag1">What is the registration fee?</h4>
+        <h4 id="tag1">What is a Ninjathon?
+        </h4>
         <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
+          Ninjathon hackathon aimed at encouraging student developers and problem solvers to create technology
+
         </p>
       </div>
       <div class="tags">
-        <h4 id="tag2">What is the registration fee?</h4>
+        <h4 id="tag2">What is a Hackathon? </h4>
         <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
+          A hackathon is a social coding event that brings computer programmers and other interested people together to
+          improve upon or build a new software program.
         </p>
       </div>
       <div class="tags">
-        <h4 id="tag3">What is the registration fee?</h4>
+        <h4 id="tag3">Who can Attend a Hackathon? </h4>
         <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
+          Anyone who is interested in technology can attend a hackathon to learn, build and share.
         </p>
       </div>
       <div class="tags">
-        <h4 id="tag4">What is the registration fee?</h4>
+        <h4 id="tag4">Can Beginners Participate? </h4>
         <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
+          Absolutely. We will have plenty of mentors and resources available, along with several workshops targeted at
+          beginners. Come learn along and Experience your first hackathon with Ninjathon.</p>
+      </div>
+      <div class="tags">
+        <h4 id="tag5">Can We Form Teams?</h4>
+        <p class="tagContent">
+          Most Definitely !! We Believe in Collaboration and encourage hackers to work in a team of upto 2 to 4 members
         </p>
       </div>
       <div class="tags">
-        <h4 id="tag5">What is the registration fee?</h4>
+        <h4 id="tag6">Can I Submit an Old Project? </h4>
         <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
-        </p>
-      </div>
-      <div class="tags">
-        <h4 id="tag6">What is the registration fee?</h4>
-        <p class="tagContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam.
+          We Apologize, but all hackathon projects should be developed during the event from scratch. We want honest
+          conditions for all the hackers. That's why all code should be done during the hackathon
         </p>
       </div>
     </div>
   </div>
-  <footer  data-aos="slide-left" data-aos-duration="1000">
+  <footer>
     <div>
       <h>Hackfolio</h>
       <div>
@@ -419,10 +447,22 @@
     </div>
     </div>
   </footer>
-
+  <script src="./assets/js/backtoTop.js"> </script>
   <script src="./assets/js/Javascript.js"></script>
   <script src="./assets/js/carousel.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+     $(window).resize(function() {
+      if ($(window).width() >=1250) {
+        console.log("Hi");
+    $('.dropdown1,.dropdown2,.dropdown3').hover(function() {
+    $('.SponsorSec').css("margin-top", "50vh"); // change css
+    }, function() {
+    $('.SponsorSec').css("margin-top","0vh");
+       });
+      }
+    });
+  </script>
   <script>
     AOS.init();
   </script>
