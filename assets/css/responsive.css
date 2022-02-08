@@ -4,17 +4,20 @@
         transition: all 0.7s ease ;
     }
     .logo{
-        width: 90%;
+        width: 100%;
         position: fixed;
         text-align: left;
         justify-content: flex-start;
-        top:1.5%;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 18%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -23,21 +26,26 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .firstHalf p{
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     .buttons{
-        margin-top: 90px;
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
     }
     .btn1{
         padding: 12px 19px;
+        font-size: 18px;
     }
     a.btn2{
-        font-size: 11px;
+        font-size: 12px;
     }
     .secondHalf img{    
     margin-right: 143px;
@@ -58,20 +66,30 @@
         flex-direction: column;
         transition: all 0.7s ease;
     }
-    .navbar{
-        height: 363px;
+    .aboutpara{
+        font-size: 1.2vw;
     }
+
+    .nav-list
+    {
+        padding-top:2vh;
+    }
+
     .logo {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 31%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -82,13 +100,14 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     a.btn2{
-        font-size: 11px;
+        font-size: 12px;
     }
     .secondHalf img{
         width: 56vw;
@@ -113,16 +132,20 @@
         transition: all 0.7s ease ;
     }
     .logo{
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 31%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -130,17 +153,22 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     .buttons{
-        margin-top: 5px;
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
     }
     a.btn2{
-        font-size: 11px;
+        font-size: 12px;
     }
     .secondHalf img{
         display: none;
@@ -165,16 +193,20 @@
         transition: all 0.7s ease ;
     }
     .logo{
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 31%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -185,7 +217,7 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .heading{
@@ -194,13 +226,17 @@
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     .buttons{
-        margin-top: 95px;
-        margin-bottom: 35px;
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
     }
     a.btn2{
-        font-size: 11px;
+        font-size: 12px;
     }
     .secondHalf img{
         display: block;
@@ -222,16 +258,20 @@
         transition: all 0.7s ease ;
     }
     .logo{
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 31%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -239,7 +279,7 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .heading{
@@ -247,12 +287,17 @@
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     .buttons{
-        margin-top: 60px;
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
     }
     .btn1{
-        font-size: 10px;
+        font-size: 18px;
     }
     .secondHalf img{
         display: none;
@@ -274,6 +319,7 @@
         transition: all 0.7s ease ;
     }
     .logo{
+        padding-left: 0vw;
         width: 90%;
         display: flex;
         justify-content: flex-start;
@@ -281,9 +327,13 @@
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
     }
     .rightNav{
         width: 31%;
+        padding-right: 0%;
+        text-align: center;
     }
     .box-main{
         flex-direction: column-reverse;
@@ -291,7 +341,7 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .heading{
@@ -299,17 +349,22 @@
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     .buttons{
-        margin-top: 117px;
+        margin-top: 52px;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
     }
     .btn1{
         padding: 9px 5px;
+        font-size: 18px;
     }
     a.btn2{
         padding: 9px 5px;
-        font-size: 8px;
+        font-size: 12px;
     }
     .secondHalf img{
         display: none;
@@ -328,16 +383,18 @@
     .navbar,.nav-list{
         flex-direction: column;
         transition: all 0.7s ease ;
+        z-index: 2 !important;
     }
     
     .logo{
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: #B9F754;
         font-weight: bolder;
         font-family: Bizmo-bold;
+        font-size: 19px;
     }
     .rightNav{
         width: 31%;
@@ -348,7 +405,7 @@
     }
     .firstHalf {
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: 60%;
     }
     .heading{
@@ -356,18 +413,22 @@
     }
     .firstHalf p{
         text-align: center;
+        font-size: 4.2vw;
     }
     .buttons{
         margin-top: 52px;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap:13px;
     }
     .btn1{
-        font-size: 5px;
+        font-size: 18px;
         padding: 9px 5px;
     }
     a.btn2{
         padding: 9px 5px;
-        font-size: 9px;
+        font-size: 12px;
     }
     .secondHalf img{
         display: none;
