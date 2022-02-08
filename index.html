@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hackfolio</title>
+  <title>Ctrl Alt Delete</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/Hackathon/Hackathon/fevicon.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -31,15 +32,26 @@
 </head>
 
 <body>
+  <div class="loader-container">
+  <img src="./assets/preloader/preloader.gif" id="preloader">
+  </div>
+
+  <script>
+    $(function(){ setTimeout(function() { 
+      $('.loader-container').fadeOut(500); }, 5000); 
+});
+  </script>
   <nav class="navbar h-nav-resp" data-aos="slide-down" data-aos-delay="100" data-aos-duration="1000">
     <div class="logo">
-      <h1 id="cornerborder"><sup>Γ</sup>Hackfolio</h1>
+      <h1 id="cornerborder">Ctrl Alt Delete</h1>
     </div>
     <ul class="nav-list v-class-resp">
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Projects</a></li>
-      <li><a href="#">Community</a></li>
-      <li><a href="#">Resources</a></li>
+      <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#Timeline">Timeline</a></li>
+      <li><a href="#Prizes">Prizes</a></li>
+      <li><a href="#Sponsorsec">Sponsors</a></li>
+      <li><a href="#Mentors">Mentors</a></li>
+      <li><a href="#FAQ">FAQ</a></li>
     </ul>
     <div class="rightNav v-class-resp">
       <button class="btn btn-sm" id="contact">Contact</button>
@@ -55,7 +67,9 @@
     <div class="box-main">
       <div class="firstHalf" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
         <h1 class="heading">Your Home for <br><span>Hackathon</span></h1>
-        <p>The only source of knowledge is experience. Ninjathon is a hackathon driven by individuals who
+        <p class="aboutpara">The only source of knowledge is experience. Ctrl Alt Delete is a hackathon driven by
+          individuals
+          who
           are
           enthusiastic about creative problem solving, where people meet up to solve problems in groups which helps them
           engage in collaborative projects to create technology and set their coding abilities to work. A hands-on
@@ -83,7 +97,7 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-  <div class="Track_Header" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+  <div class="Track_Header" id="tracks" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <span class="Track1">
       Discover the </span> <span class="Track2"> Track</span><br> <span class="Track3">Based on Your Idea </span>
   </div>
@@ -94,8 +108,8 @@
         <h1>Cybersecurity </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>Revolves around ensuring that frameworks, organizations, and projects are protected from computerized
+          assaults. </p>
       </div>
     </div>
     <div class='card'>
@@ -104,8 +118,10 @@
         <h1>Education </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>Create a system for students to help them better understand and enjoy their online classes during this
+          pandemic
+
+        </p>
       </div>
     </div>
     <div class='card'>
@@ -114,8 +130,7 @@
         <h1>Women's Safety</h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>A system that enables women to alert their contacts in emergency circumstances when they feel unsafe.</p>
       </div>
     </div>
     <div class='card'>
@@ -124,8 +139,9 @@
         <h1>E-Administration </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>Transforming time-consuming paper work into more efficient electronic administration for
+          efficient information storage
+        </p>
       </div>
     </div>
     <div class='card'>
@@ -134,8 +150,8 @@
         <h1>Developer Tools </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>Find and fix issues in layouts and functionality. If a button isn’t working or an image in the layout isn’t
+          in the right place, these tools help you resolve those issues. </p>
       </div>
     </div>
     <div class='card'>
@@ -144,8 +160,8 @@
         <h1>Blockchain & Crypto </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p> Prominent terms in today's digital age. Prepare to explore uncharted terrain in which blockchain technology
+          and crypo can be applied. </p>
       </div>
     </div>
     <div class='card'>
@@ -154,8 +170,8 @@
         <h1>Personal Growth & <br> Well-being </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>One's well-being isn't extra, it's essential. Use your creativity, passion and expertise and concoct projects
+          for wellness. </p>
       </div>
     </div>
     <div class='card'>
@@ -164,8 +180,8 @@
         <h1>Open Innovation </h1>
       </div>
       <div class='card__bottom'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna </p>
+        <p>Promoting an open information age mindset towards innovation for the betterment and overall growth of the
+          society </p>
       </div>
     </div>
 
@@ -248,11 +264,11 @@
       <div class='card'>
         <div class='card__top'>
           <i class='fas fa-running'></i>
-          <h1>Personal Growth & Well Being </h1>
+          <h1>Personal Growth & Well-Being </h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>One's well-being isn't extra, it's essential. Use your creativity, passion and expertise and concoct
+            projects for wellness. </p>
         </div>
       </div>
     </div>
@@ -269,10 +285,10 @@
       </div>
     </div>
   </div>
-  <section class="timeline">
+  <section class="timeline" id="Timeline">
     <div id="timeline" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Timeline</div>
     <div id="coming-soon" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Coming Soon</div>
-    <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+    <div id="Prizes" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
       <h>Prizes</h>
       <h>Get your Reward</h>
       <div class="prizes">
@@ -282,7 +298,9 @@
             <p>First</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
-          <div id="dropdowncontent1"><div>Coming Soon</div></div>
+          <div id="dropdowncontent1">
+            <div>Coming Soon</div>
+          </div>
         </div>
 
         <div class="dropdown2">
@@ -291,7 +309,9 @@
             <p>Second</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
-          <div id="dropdowncontent2"><div>Coming Soon</div></div>
+          <div id="dropdowncontent2">
+            <div>Coming Soon</div>
+          </div>
         </div>
         <div class="dropdown3 hvr">
           <div class="prztxt">
@@ -299,13 +319,15 @@
             <p>Third</p>
           </div>
           <i class="fas fa-caret-down arrow"></i>
-          <div id="dropdowncontent3"><div>Coming Soon</div></div>
+          <div id="dropdowncontent3">
+            <div>Coming Soon</div>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
-  <div class="SponsorSec" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+  <div class="SponsorSec" id="Sponsorsec" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <div class="Sponsor_Header">
       <span id="Sponsorheader1">Our Proud&nbsp;</span> <span id="Sponsorheader2">Sponsors</span>
     </div>
@@ -350,8 +372,23 @@
     </div> -->
     <div id="coming-soon">Coming Soon</div>
   </div>
-
-  <div class="MentorSec" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+  <div class="JudgeSec" id="Judges" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+    <div class="JudgeHeader">
+      <span id="Judgeheader2">Meet the&nbsp;</span><span id="Judgeheader1">Judges</span>
+    </div>
+    <!-- <div class="JudgeBanners">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+      <img src="./assets/img/Hackathon/Hackathon/nimish 2.png" alt="Mentors">
+    </div> -->
+    <div id="coming-soon">Coming Soon</div>
+  </div>
+  <div class="MentorSec" id="Mentors" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
     <div class="MentorHeader">
       <span id="Mentorheader1">Mentors&nbsp;</span><span id="Mentorheader2">who we trust</span>
     </div>
@@ -369,56 +406,62 @@
   </div>
 
 
-  <div class="FAQs">
-    <img src="./assets/img/Hackathon/Hackathon/Group 55@2x.png" alt="FAQ" id="FAQimg" data-aos="slide-right"
+  <div class="FAQs" id="FAQ">
+    <img src="./assets/img/Hackathon/Hackathon/Layer 1.png" alt="FAQ" id="FAQimg" data-aos="fade-right"
       data-aos-delay="100" data-aos-duration="1000">
-    <div class="FAQsec" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000" style="overflow-x: hidden;">
-      <h2 id="FAQheader">FAQs</h2>
+    <div class="FAQsec" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" style="overflow-x: hidden;">
+      <div class="FAQheader">
+        <h2 id="FAQtitle">FAQs</h2>
+      </div>
       <div class="tags">
-        <h4 id="tag1">What is a Ninjathon?
-        </h4>
-        <p class="tagContent">
-          Ninjathon hackathon aimed at encouraging student developers and problem solvers to create technology
+        <div class="tagQuestion">
+          <h4>What is a Ctrl Alt Delete?
+          </h4>
+          <p class="tagContent">
+            Ctrl Alt Delete hackathon aimed at encouraging student developers and problem solvers to create technology
 
-        </p>
-      </div>
-      <div class="tags">
-        <h4 id="tag2">What is a Hackathon? </h4>
-        <p class="tagContent">
-          A hackathon is a social coding event that brings computer programmers and other interested people together to
-          improve upon or build a new software program.
-        </p>
-      </div>
-      <div class="tags">
-        <h4 id="tag3">Who can Attend a Hackathon? </h4>
-        <p class="tagContent">
-          Anyone who is interested in technology can attend a hackathon to learn, build and share.
-        </p>
-      </div>
-      <div class="tags">
-        <h4 id="tag4">Can Beginners Participate? </h4>
-        <p class="tagContent">
-          Absolutely. We will have plenty of mentors and resources available, along with several workshops targeted at
-          beginners. Come learn along and Experience your first hackathon with Ninjathon.</p>
-      </div>
-      <div class="tags">
-        <h4 id="tag5">Can We Form Teams?</h4>
-        <p class="tagContent">
-          Most Definitely !! We Believe in Collaboration and encourage hackers to work in a team of upto 2 to 4 members
-        </p>
-      </div>
-      <div class="tags">
-        <h4 id="tag6">Can I Submit an Old Project? </h4>
-        <p class="tagContent">
-          We Apologize, but all hackathon projects should be developed during the event from scratch. We want honest
-          conditions for all the hackers. That's why all code should be done during the hackathon
-        </p>
+          </p>
+        </div>
+        <div class="tagQuestion">
+          <h4>What is a Hackathon? </h4>
+          <p class="tagContent">
+            A hackathon is a social coding event that brings computer programmers and other interested people together
+            to
+            improve upon or build a new software program.
+          </p>
+        </div>
+        <div class="tagQuestion">
+          <h4>Who can Attend a Hackathon? </h4>
+          <p class="tagContent">
+            Anyone who is interested in technology can attend a hackathon to learn, build and share.
+          </p>
+        </div>
+        <div class="tagQuestion">
+          <h4>Can Beginners Participate? </h4>
+          <p class="tagContent">
+            Absolutely. We will have plenty of mentors and resources available, along with several workshops targeted at
+            beginners. Come learn along and Experience your first hackathon with Ctrl Alt Delete.</p>
+        </div>
+        <div class="tagQuestion">
+          <h4>Can We Form Teams?</h4>
+          <p class="tagContent">
+            Most Definitely !! We Believe in Collaboration and encourage hackers to work in a team of upto 2 to 4
+            members
+          </p>
+        </div>
+        <div class="tagQuestion">
+          <h4>Can I Submit an Old Project? </h4>
+          <p class="tagContent">
+            We Apologize, but all hackathon projects should be developed during the event from scratch. We want honest
+            conditions for all the hackers. That's why all code should be done during the hackathon
+          </p>
+        </div>
       </div>
     </div>
   </div>
   <footer>
     <div>
-      <h>Hackfolio</h>
+      <h>Ctrl Alt Delete</h>
       <div>
         <div>
           <ul>
@@ -440,7 +483,10 @@
       <hr>
       <div class="footer-text">
         <ul>
-          <li>@2021 Hackfolio All rights reserved</li>
+          <li>@2021 Ctrl Alt Delete All rights reserved<br> BY <a class="cnlink"
+              href="https://codingninjassrm.com/">Coding
+              Ninja_SRM</a>
+          </li>
           <li>Terms & Agreements</li>
           <li> Privacy Policy</li>
       </div>
@@ -452,14 +498,13 @@
   <script src="./assets/js/carousel.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-      $( document ).ready(function() {
-      if ($(window).width() >=1250) {
-        console.log("Hi");
-    $('.dropdown1,.dropdown2,.dropdown3').hover(function() {
-    $('.SponsorSec').animate({ marginTop: '50vh'}, 500); 
-    }, function() {
-    $('.SponsorSec').animate({ marginTop: '0vh'}, 500); 
-       });
+    $(document).ready(function () {
+      if ($(window).width() >= 1250) {
+        $('.dropdown1,.dropdown2,.dropdown3').hover(function () {
+          $('.SponsorSec').animate({ marginTop: '50vh' }, 400);
+        }, function () {
+          $('.SponsorSec').animate({ marginTop: '0vh' }, 400);
+        });
       }
     });
   </script>
