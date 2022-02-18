@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ctrl Alt Delete</title>
-  <link rel="icon" type="image/x-icon" href="./assets/img/Hackathon/Hackathon/fevicon.png">
+  <link rel="icon" type="image/x-icon" href="./assets/img/Hackathon/Hackathon/Asset 1 (1).png" sizes="32 x 32">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -22,28 +22,35 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
     $(window).scroll(function () {
+      if ($(window).width() >= 1250) {
       if ($(this).scrollTop() < 40) {
-        $(".navbar").css("z-index", -1);
+        $(".navbar").css("background-color", 'transparent');
       } else {
-        $(".navbar").css("z-index", 2);
+        $(".navbar").css("background-color", '#070c0e');
       }
+    }
+    else{
+      $(".navbar").css("background-color", '#070c0e');
+    }
     });
   </script>
 </head>
 
 <body>
   <div class="loader-container">
-  <img src="./assets/preloader/preloader.gif" id="preloader">
+    <img src="./assets/preloader/preloader.gif" id="preloader">
   </div>
 
   <script>
-    $(function(){ setTimeout(function() { 
-      $('.loader-container').fadeOut(500); }, 5000); 
-});
+    $(function () {
+      setTimeout(function () {
+        $('.loader-container').fadeOut(500);
+      }, 5000);
+    });
   </script>
   <nav class="navbar h-nav-resp" data-aos="slide-down" data-aos-delay="100" data-aos-duration="1000">
     <div class="logo">
-      <h1 id="cornerborder">Ctrl Alt Delete</h1>
+      <img src="./assets/img/Hackathon/Hackathon/Asset 1 (1).png" alt="" id="cornerborder">
     </div>
     <ul class="nav-list v-class-resp">
       <li><a href="#tracks">Tracks</a></li>
@@ -78,8 +85,16 @@
 
 
         <div class="buttons">
-          <button class="btn1">Apply with Devfolio</button>
-          <a href="#" class="btn2">
+          <div class="devfolio">
+            <div 
+            class="apply-button" 
+            data-hackathon-slug="ctrl-alt-delete" 
+            data-button-theme="light"
+            style="height: 44px; width: 312px" ></div>
+          </div>
+
+          <!-- <button class="btn1">Apply with Devfolio</button> -->
+          <a href="https://discord.gg/DyMX99EBmB" class="btn2">
             <span class="fa-stack fa-2x">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fab fa-discord fa-stack-1x fa-inverse"></i></span> Join Discord</a>
@@ -101,7 +116,7 @@
     <span class="Track1">
       Discover the </span> <span class="Track2"> Track</span><br> <span class="Track3">Based on Your Idea </span>
   </div>
-  <div class='track_container' data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+  <div class='track_container' data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
     <div class='card'>
       <div class='card__top'>
         <i class='fas fa-user-secret'></i>
@@ -195,8 +210,8 @@
           <h1>Cybersecurity </h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Revolves around ensuring that frameworks, organizations, and projects are protected from computerized
+            assaults. </p>
         </div>
       </div>
     </div>
@@ -207,8 +222,8 @@
           <h1>Education</h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Create a system for students to help them better understand and enjoy their online classes during this
+            pandemic </p>
         </div>
       </div>
     </div>
@@ -219,8 +234,7 @@
           <h1>Women's Safety</h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>A system that enables women to alert their contacts in emergency circumstances when they feel unsafe. </p>
         </div>
       </div>
     </div>
@@ -231,8 +245,8 @@
           <h1>E-Administration </h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Transforming time-consuming paper work into more efficient electronic administration for
+            efficient information storage </p>
         </div>
       </div>
     </div>
@@ -243,8 +257,8 @@
           <h1>Developer Tools </h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Find and fix issues in layouts and functionality. If a button isn’t working or an image in the layout isn’t
+            in the right place, these tools help you resolve those issues. </p>
         </div>
       </div>
     </div>
@@ -255,8 +269,8 @@
           <h1>Blockchain & Crypto</h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Prominent terms in today's digital age. Prepare to explore uncharted terrain in which blockchain technology
+            and crypo can be applied. </p>
         </div>
       </div>
     </div>
@@ -279,8 +293,8 @@
           <h1>Open Innovation </h1>
         </div>
         <div class='card__bottom'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna </p>
+          <p>Promoting an open information age mindset towards innovation for the betterment and overall growth of the
+            society </p>
         </div>
       </div>
     </div>
@@ -331,25 +345,37 @@
     <div class="Sponsor_Header">
       <span id="Sponsorheader1">Our Proud&nbsp;</span> <span id="Sponsorheader2">Sponsors</span>
     </div>
-    <!-- 
-        <div class="SponsorSubHeads">  
+
+    <div class="SponsorSubHeads">
       <h4>Platinum</h4>
       <div class="SponsorBanners">
-        <img src="./assets/img/Hackathon/Hackathon/mlh-logo-white.png" alt="mlh-logo-white">
+        <a href="https://devfolio.co/" target="_blank">
+          <img src="./assets/img/Hackathon/Hackathon/Devfolio_Logo-White.png" alt="mlh-logo-white">
+        </a>
+        <a href="https://polygon.technology/" target="_blank">
+          <img src="./assets/img/Hackathon/Hackathon/Polygon_Logo-White.png" alt="mlh-logo-white">
+        </a>
+        <!-- <div class="coming-soon2"> Coming Soon</div>
         <div class="coming-soon2"> Coming Soon</div>
         <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div> -->
       </div>
       <h4>Gold</h4>
       <div class="SponsorBanners">
+        <a href="https://filecoin.io/" target="_blank">
+          <img src="./assets/img/Hackathon/Hackathon/Filecoin White.png" alt="mlh-logo-white">
+
+        </a>
+        <a href="https://celo.org/" target="_blank">
+          <img src="./assets/img/Hackathon/Hackathon/Celo Logo Monochrome Reverse@2x.png" alt="mlh-logo-white">
+        </a>
+        <a href="https://tezos.com/" target="_blank">
+          <img src="./assets/img/Hackathon/Hackathon/Tezos_Logo-White.png" alt="mlh-logo-white">
+
+        </a>
+        <!-- <div class="coming-soon2"> Coming Soon</div>
         <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div> -->
       </div>
       <h4>Silver</h4>
       <div class="SponsorBanners">
@@ -362,15 +388,20 @@
       </div>
       <h4>Bronze</h4>
       <div class="SponsorBanners">
+        <a href="https://www.taskade.com/" target="_blank"><img style="border-radius:50%; width:6vw"
+            src="./assets/img/Hackathon/Hackathon/taskade-appstore-icon.png" alt="mlh-logo-white"></a>
+        <a href="http://linktr.ee/leadinglearners " target="_blank"><img
+            src="./assets/img/Hackathon/Hackathon/leading learners.png" alt="mlh-logo-white"></a>
+        <a href="http://givemycertificate.com" target="_blank"><img style="width:6vw"
+            src="./assets/img/Hackathon/Hackathon/GMC LogoS.png" alt="mlh-logo-white"></a>
+        <a href="https://gen.xyz/"><img style="width:6vw" src="./assets/img/Hackathon/Hackathon/xyz-logo-white.png"
+            alt="mlh-logo-white"></a>
+        <!-- <div class="coming-soon2"> Coming Soon</div>
         <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
-        <div class="coming-soon2"> Coming Soon</div>
+        <div class="coming-soon2"> Coming Soon</div> -->
       </div>
-    </div> -->
-    <div id="coming-soon">Coming Soon</div>
+    </div>
+    <!-- <div id="coming-soon">Coming Soon</div> -->
   </div>
   <div class="JudgeSec" id="Judges" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
     <div class="JudgeHeader">
@@ -465,10 +496,12 @@
       <div>
         <div>
           <ul>
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>SERVICES</li>
-            <li>CONTACT US</li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#Timeline">Timeline</a></li>
+            <li><a href="#Prizes">Prizes</a></li>
+            <li><a href="#Sponsorsec">Sponsors</a></li>
+            <li><a href="#Mentors">Mentors</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
           </ul>
         </div>
         <div>
@@ -483,7 +516,7 @@
       <hr>
       <div class="footer-text">
         <ul>
-          <li>@2021 Ctrl Alt Delete All rights reserved<br> BY <a class="cnlink"
+          <li>@2022 Ctrl Alt Delete All rights reserved<br> BY <a class="cnlink"
               href="https://codingninjassrm.com/">Coding
               Ninja_SRM</a>
           </li>
@@ -512,5 +545,6 @@
     AOS.init();
   </script>
 </body>
+<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 
 </html>
