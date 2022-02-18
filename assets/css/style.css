@@ -43,9 +43,8 @@ body {
   overflow-x: hidden;
 }
 
-.loading 
-{
-  overflow:hidden;
+.loading {
+  overflow: hidden;
 }
 
 * {
@@ -81,7 +80,7 @@ body {
   background: #80ba28;
 }
 
-.loader-container{
+.loader-container {
   width: 100%;
   height: 100vh;
   background-color: black;
@@ -92,18 +91,17 @@ body {
   z-index: 9000;
 }
 
-#preloader
-{
+#preloader {
   position: fixed;
   z-index: 9999;
   overflow: hidden;
   background: black;
   place-items: center;
-  height:30vh;
-  width:45vh;
+  height: 30vh;
+  width: 45vh;
 }
 .logo {
-  padding-left: 7vw;
+  padding-left: 3vw;
   /* width: 42%; */
   display: flex;
   justify-content: center;
@@ -113,12 +111,14 @@ body {
   font-size: 18px;
   font-family: Bizmo-bold;
 }
+.logo img {
+  width: 40%;
+}
 .aboutpara {
   font-weight: 500;
   /* font-size: 1.2vw; */
 }
 .navbar {
-  background-color: #070c0e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,8 +126,10 @@ body {
   top: 0;
   cursor: pointer;
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 0.5%;
   width: 100%;
+  z-index: 2;
+  height: auto;
 }
 .nav-list {
   width: 70%;
@@ -215,7 +217,21 @@ body {
   margin-right: -114px;
 }
 .buttons {
+  display: flex;
+  align-items: center;
   margin-top: 55px;
+  justify-content: center;
+}
+.devfolio{
+  display: flex;
+    height: 8.5vh;
+    width: 21vw;
+    background: #27333f;
+    border-radius: 0vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 .btn1 {
   font-weight: 800;
@@ -252,6 +268,9 @@ a.btn2 {
   text-decoration: none;
   padding-left: 35px;
   font-family: Bizmo-regular;
+}
+.fa-2x {
+  font-size: 1.6em !important;
 }
 a.btn2:hover {
   color: #b9f754;
@@ -890,6 +909,11 @@ a.btn2:hover {
 .SponsorSec {
   padding-top: 10vh;
 }
+.SponsorSubHeads {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
 
 .MentorSec > #coming-soon {
   text-align: center;
@@ -919,19 +943,21 @@ a.btn2:hover {
   font-family: "Bizmo-Medium";
   margin-top: 3%;
   margin-left: 7vw;
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #95e70d;
 }
 
 .SponsorBanners {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(6, 1fr);
   margin-right: 7vh;
 }
 
 .SponsorBanners img {
   margin-left: 7vw;
-  width: 8vw;
+  width: 9vw;
 }
 
 .coming-soon2 {
@@ -990,17 +1016,18 @@ a.btn2:hover {
 .FAQs {
   display: flex;
   padding-top: 10vh;
+  gap: 8vh;
 }
 
 #FAQimg {
   height: 65vh;
 }
 .FAQsec {
-  padding-top: 7vh;
+  padding-top: 4vh;
   height: 65vh;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 6vh;
 }
 
 .tags {
@@ -1041,8 +1068,12 @@ a.btn2:hover {
   font-weight: lighter;
   height: 10vh;
   padding: 2vh 1vw;
-  z-index: 6;
+  z-index: 10;
   overflow-y: scroll;
+}
+
+.tagContent::-webkit-scrollbar {
+  display: none;
 }
 
 footer {
@@ -1086,6 +1117,14 @@ footer > div > div > div > ul > li {
   padding: 0 1.5vw 0 0;
   font-size: 1.1vw;
   color: #c9d2d8;
+}
+footer > div > div > div > ul > li > a {
+  text-decoration: none;
+  color: #6a8185;
+}
+footer > div > div > div > ul > li > a:hover {
+  border-bottom: 1px solid #b9f754;
+  transition: ease 0.3s all;
 }
 .footer-text {
   margin-top: 6vh;
