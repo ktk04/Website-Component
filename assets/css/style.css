@@ -275,7 +275,7 @@ body {
     margin: 0.5rem 1rem;
     display: flex;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: Nunito Sans, sans-serif;
     justify-content: center;
     align-items: center;
@@ -295,15 +295,21 @@ body {
   margin-right: 0.8rem;
 }
 
-#apply-button {
+button.dark {
   color: #b9f754 !important;
 }
 .fa-2x {
   font-size: 1.3em !important;
 }
 .btn2:hover {
-  color: #b9f754;
+  color: #27333f;
+  background-color: #b9f754;
   transition: 0.3s all ease;
+}
+
+.btn2:hover> svg
+{
+  fill: #27333f;
 }
 
 .fa-discord:hover
