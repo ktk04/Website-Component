@@ -279,18 +279,17 @@ body {
     font-family: Nunito Sans, sans-serif;
     justify-content: center;
     align-items: center;
-    min-width: 35vh;
-    height: 2vh;
+    min-width: 312px;
+    height: 44px;
     flex-direction: row;
     text-decoration: none;
     color: #fff;
     background-color: #7289da;
-    padding: 1rem;
     cursor: pointer;
 }
 
 .btn2 svg {
-  width: 35px;
+  width: 30px;
   height: 30px;
   fill: white;
   margin-right: 0.8rem;
