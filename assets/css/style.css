@@ -260,7 +260,7 @@ body {
   color: #b9f754;
   transition: 0.3s ease all;
 }
-.fa-circle
+/* .fa-circle
 {
   color:#111617;
 }
@@ -268,7 +268,7 @@ body {
 .fa-discord
 {
   color:#6a8185 !important;
-}
+} */
 .btn2 {
   text-align: center;
     border-radius: 4px;
@@ -283,16 +283,20 @@ body {
     height: 44px;
     flex-direction: row;
     text-decoration: none;
-    color: #fff;
-    background-color: #7289da;
+    color: #b9f754;
+    background-color: #27333f;
     cursor: pointer;
 }
 
 .btn2 svg {
   width: 30px;
   height: 30px;
-  fill: white;
+  fill: #b9f754;
   margin-right: 0.8rem;
+}
+
+#apply-button {
+  color: #b9f754 !important;
 }
 .fa-2x {
   font-size: 1.3em !important;
