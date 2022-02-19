@@ -260,23 +260,53 @@ body {
   color: #b9f754;
   transition: 0.3s ease all;
 }
-a.btn2 {
-  font-weight: 800;
-  background-color: #070c0e;
-  color: #6a8185;
-  font-size: 19px;
-  text-decoration: none;
-  padding-left: 35px;
-  font-family: Bizmo-regular;
+.fa-circle
+{
+  color:#111617;
+}
+
+.fa-discord
+{
+  color:#6a8185 !important;
+}
+.btn2 {
+  text-align: center;
+    border-radius: 4px;
+    margin: 0.5rem 1rem;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Nunito Sans, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-width: 15vh;
+    height: 44px;
+    flex-direction: row;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7289da;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn2 svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  margin-right: 0.8rem;
 }
 .fa-2x {
-  font-size: 1.6em !important;
+  font-size: 1.3em !important;
 }
-a.btn2:hover {
+.btn2:hover {
   color: #b9f754;
   transition: 0.3s all ease;
 }
 
+.fa-discord:hover
+{
+  color:#b9f754 !important;
+}
 .boorgir {
   display: none;
   position: absolute;
@@ -284,6 +314,7 @@ a.btn2:hover {
   right: 6%;
   top: 1vh;
 }
+
 .line {
   width: 420%;
   background-color: #b9f754;
@@ -938,6 +969,7 @@ a.btn2:hover {
   font-size: 3vw;
   color: #95e70d;
 }
+
 
 .SponsorSubHeads h4 {
   font-family: "Bizmo-Medium";
