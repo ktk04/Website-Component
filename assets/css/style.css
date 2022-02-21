@@ -995,21 +995,53 @@ body {
 }
 .owl-2
 {
-  margin-left:8vw;
+  margin-left:9vw;
 }
 .owl-2 img
 {
-  width:15vw !important;
+  width:12vw !important;
 }
 
 .owl-3
 {
-  margin-left:9vw;
+  margin-left:10vw;
 }
 .owl-3 img
 {
   width: auto!important;
   height: 6.5vw;
+}
+
+.rosenmedia img
+{
+  border-radius:1.5rem;
+}
+
+@media only screen and (max-width: 710px) {
+  .owl-3
+  {
+    margin-left:7vw;
+  }
+
+  .owl-2
+  {
+    margin-left:6vw;
+  }
+
+  .owl-2 img
+  {
+  width:20vw !important;
+  }  
+
+  .owl-3 img
+  {
+   height:9vw;
+  }  
+
+  .leadinglearners img
+  {
+    height:10vw !important;
+  }
 }
 .coming-soon2 {
   text-align: center;
