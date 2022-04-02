@@ -1,0 +1,442 @@
+@media (max-width: 1200px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease ;
+    }
+    
+    .navbar{
+        background-color: #070c0e;
+        height:100%;
+    }
+    .logo{
+        width: 25%;
+        position: fixed;
+        text-align: left;
+        justify-content: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+        padding-right:85vw;
+    }
+    .rightNav{
+        width: 18%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 70%;
+    }
+    .firstHalf {
+        text-align: center;
+        /* margin-top: 50px; */
+        width: 60%;
+    }
+    .firstHalf p{
+        text-align: center;
+        /* margin-top: 50px; */
+        font-size: 0.5rem;
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    .btn1{
+        padding: 12px 19px;
+        font-size: 18px;
+    }
+    a.btn2{
+        padding-left:0px;
+        margin: 0px;
+    }
+    .secondHalf img{    
+    margin-right: 143px;
+    width: 480px;
+    }
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@media only screen and (max-width:1140px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease;
+    }
+    .aboutpara{
+        font-size: 1.2vw;
+    }
+
+    .logo {
+        width: 25%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+    }
+    .rightNav{
+        width: 31%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstSection {
+        height: auto;
+    }
+    .firstHalf {
+        text-align: center;
+        /* margin-top: 50px; */
+    }
+    .firstHalf p{
+        text-align: center;
+        font-size: 2.2vw;
+        line-height: inherit;
+    }
+ 
+    .secondHalf img{
+        width: 56vw;
+        justify-content: center;
+        margin-right: 26vw;
+        border-radius: 50%;
+    }
+  
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+    .firstHalf p {
+        line-height: 8vh;
+      }
+    }
+
+@media (max-width: 1280px) and (min-width: 1280px) {
+a.btn2
+{
+    padding-left:0;
+}
+}
+@media (max-width: 990px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease ;
+    }
+    .logo{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+    }
+    .rightNav{
+        width: 31%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstHalf {
+        text-align: center;
+        /* margin-top: 50px; */
+        width: 60%;
+    }
+    .firstHalf p{
+        text-align: center;
+        font-size: 2.2vw;
+        line-height: inherit;
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    .secondHalf img{
+        display: none;
+    }
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .line{
+        width:320%;
+    }
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease ;
+    }
+    .logo{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+    }
+    .rightNav{
+        width: 31%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstSection {
+        height: auto;
+    }
+    .firstHalf {
+        text-align: center;
+        /* margin-top: 50px; */
+        width: 60%;
+    }
+    .heading{
+        font-size: 55px;
+        /* margin-top: 78px; */
+    }
+    .firstHalf p{
+        text-align: center;
+        font-size: 2.2vw;
+        line-height: inherit;
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    .secondHalf img{
+        display: block;
+    }
+ 
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        visibility: hidden;
+        opacity:0;
+    }
+}
+@media (max-width: 600px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease ;
+    
+    }
+    .logo{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+    }
+    .rightNav{
+        width: 31%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstHalf {
+        text-align: left;
+        /* margin-top: 50px; */
+        width: 60%;
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .firstHalf p{
+        text-align: left;
+        font-size: 4.2vw;
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    .btn1{
+        font-size: 18px;
+    }
+    .secondHalf img{
+        display: none;
+    }
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar,.nav-list{
+        flex-direction: column;
+        transition: all 0.7s ease ;
+    }
+    .logo{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B9F754;
+        font-weight: bolder;
+        font-family: Bizmo-bold;
+        font-size: 19px;
+        top:1.5vh;
+        padding-left: 8vh;
+    }
+    .rightNav{
+        width: 31%;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .firstHalf {
+        width: 100vw;
+        align-items: left;
+        padding-left: 16vw;
+    }
+    .heading{
+        font-size: 34px;
+    }
+    .firstHalf p{
+        width: 85vw;
+    text-align: left;
+    font-size: 4.2vw;
+        
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .btn1{
+        padding: 9px 5px;
+        font-size: 18px;
+    }
+    .secondHalf img{
+        display: none;
+    }
+    .boorgir{
+        display: block;
+        padding-right: 2vh;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+/* @media (max-width:360px) {
+    .heading{
+        font-size: 28px;
+    }
+    .firstHalf p{
+        text-align: center;
+        font-size: 4.2vw;
+    }
+    .buttons{
+        margin-top: 52px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap:13px;
+    }
+    .btn1{
+        font-size: 18px;
+        padding: 9px 5px;
+    }
+    a.btn2{
+        padding: 9px 5px;
+        font-size: 12px;
+    }
+    .secondHalf img{
+        display: none;
+    }
+    .boorgir{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 6vh;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+} */
+
+
+@media (max-width:360px) {
+    .heading{
+        font-size: 28px;
+    }
+
+    a.btn2{
+        font-size:12px;
+    }
+}
