@@ -942,16 +942,16 @@ body {
 
   .dropdown1:hover
   {
-    height:40vw;
+    height:90vw;
   }
   .dropdown2:hover
   {
-     height:15vw;
+     height:35vw;
   }
 
   .dropdown3:hover
   {
-     height:15vw;
+     height:35vw;
   }
 
 
@@ -962,12 +962,12 @@ body {
   .dropdown3 {
     position: relative;
     margin: 0%;
-    width: 45vw;
+    width: 55vw;
     display: flex;
     align-items: baseline;
-    gap: 33vw;
+    gap: 43vw;
     padding: 1vh 2vw 1vh 2vw;
-    font-size: 2.4vw;
+    font-size: 3.5vw;
     font-family: "Bizmo-light";
     color: #6a8185;
     background-image: linear-gradient(102deg,
@@ -985,7 +985,7 @@ body {
   .prztxt {
     display: flex;
     align-items: baseline;
-    gap: 0.8vw;
+    gap: 1.8vw;
   }
 
   .dropdown1:hover>#dropdowncontent1 {
@@ -1036,6 +1036,10 @@ body {
     background: transparent;
     border: transparent;
     color: #95e70d;
+  }
+
+  .prztxt>span{
+     font-size: 4vw;
   }
 }
 
