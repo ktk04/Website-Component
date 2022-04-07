@@ -926,23 +926,23 @@ body {
   .dropdown1:hover .pdesc
   {
     display: block;
-    width:24vw;
+    width:33vw;
   }
 
   .dropdown2:hover .pdesc
   {
     display:block;
-    width:24vw;
+    width:33vw;
   }
   .dropdown3:hover .pdesc
   {
     display:block;
-    width:24vw;
+    width:33vw;
   }
 
   .dropdown1:hover
   {
-    height:45vw;
+    height:40vw;
   }
   .dropdown2:hover
   {
@@ -985,7 +985,7 @@ body {
   .prztxt {
     display: flex;
     align-items: baseline;
-    gap: 1vh;
+    gap: 0.8vw;
   }
 
   .dropdown1:hover>#dropdowncontent1 {
